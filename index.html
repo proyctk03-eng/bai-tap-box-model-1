@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập Box Model 1</title>
+    <title>Xây dựng bố cục với Mô hình hộp CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Xây dựng bố cục với Mô hình hộp CSS</h1>
 
-    <div class="card">
-        <h3>Thẻ 1 - content-box</h3>
-        <p>Thẻ này sử dụng box-sizing: content-box. Tổng chiều rộng = 280 + 20*2 + 5*2 = 330px.</p>
-    </div>
+    <div class="container">
+        <div class="card">
+            <h3>Thẻ 1 - content-box</h3>
+            <p>box-sizing: content-box; background-color: #2ecc71 (xanh lá). Kích thước thực tế sẽ phình to ra cộng thêm padding và border.</p>
+        </div>
 
-    <div class="card">
-        <h3>Thẻ 2 - border-box</h3>
-        <p>Thẻ này sử dụng box-sizing: border-box. Tổng chiều rộng = 280px (đã bao gồm padding và border).</p>
-    </div>
+        <div class="card">
+            <h3>Thẻ 2 - border-box</h3>
+            <p>box-sizing: border-box; background-color: #f1c40f (vàng). Kích thước tổng giữ nguyên 280px x 150px.</p>
+        </div>
 
-    <div class="card">
-        <h3>Thẻ 3 - border-box</h3>
-        <p>Thẻ này cũng sử dụng box-sizing: border-box. Kích thước tổng giữ nguyên 280x150px.</p>
+        <div class="card">
+            <h3>Thẻ 3 - border-box</h3>
+            <p>box-sizing: border-box; background-color: #e74c3c (đỏ). Kích thước tổng giữ nguyên 280px x 150px.</p>
+        </div>
     </div>
 </body>
 </html>
