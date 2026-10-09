@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Box Model 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Xây dựng bố cục với Mô hình hộp CSS</h1>
+
+    <div class="card">
+        <h3>Thẻ 1 - content-box</h3>
+        <p>Thẻ này sử dụng box-sizing: content-box. Tổng chiều rộng = 280 + 20*2 + 5*2 = 330px.</p>
+    </div>
+
+    <div class="card">
+        <h3>Thẻ 2 - border-box</h3>
+        <p>Thẻ này sử dụng box-sizing: border-box. Tổng chiều rộng = 280px (đã bao gồm padding và border).</p>
+    </div>
+
+    <div class="card">
+        <h3>Thẻ 3 - border-box</h3>
+        <p>Thẻ này cũng sử dụng box-sizing: border-box. Kích thước tổng giữ nguyên 280x150px.</p>
+    </div>
+</body>
+</html>
